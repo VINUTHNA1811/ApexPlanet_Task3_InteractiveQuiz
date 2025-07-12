@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>📚 Interactive Quiz App</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="app-container">
+    <header class="app-header">
+      <div class="gradient-text-wrapper">
+  <h1 class="gradient-text">Interactive Quiz App <span class="emoji">🚀</span></h1>
+  <p class="sub-caption">Responsive, Engaging & Fun</p>
+</div>
+
+</div>
+
+      <button id="darkModeToggle">🌓</button>
+    </header>
+
+    <div class="card" id="setupCard">
+      <label for="category">Choose Category</label>
+      <select id="category">
+        <option value="9">General Knowledge</option>
+        <option value="17">Science & Nature</option>
+        <option value="18">Computer Science</option>
+        <option value="21">Sports</option>
+        <option value="23">History</option>
+        <option value="24">Politics</option>
+      </select>
+
+      <label for="difficulty">Select Difficulty</label>
+      <select id="difficulty">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+
+      <label for="questionCount">Number of Questions: <span id="countLabel">10</span></label>
+      <input type="range" id="questionCount" min="5" max="20" value="10" />
+
+      <button id="startBtn">Start Quiz</button>
+    </div>
+
+    <div id="loader" class="loader hidden">Loading questions...</div>
+
+    <div id="quizContainer" class="hidden">
+      <div class="card">
+        <div class="quiz-header">
+          <div id="scoreBadge">Score: 0</div>
+          <div id="timer"></div>
+        </div>
+        <div id="questionBox"></div>
+        <div id="optionsBox" class="options"></div>
+        <div class="navigation-buttons">
+          <button id="prevBtn">⬅ Prev</button>
+          <button id="nextBtn">Next ➡</button>
+          <button id="finishBtn" class="hidden">🏁 Finish</button>
+        </div>
+        <div class="progress-bar-wrapper">
+          <div id="progressBar"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="resultScreen" class="hidden">
+      <div class="card">
+        <h2>🎉 Quiz Completed!</h2>
+        <p id="resultText"></p>
+        <button id="homeBtn">Go to Home Page</button>
+      </div>
+    </div>
+
+    <div class="joke-section" id="jokeSection">
+      <button id="jokeBtn">Tell me a joke!</button>
+      <p id="jokeDisplay" class="joke-display"></p>
+    </div>
+  </div>
+  <canvas id="confettiCanvas" class="hidden"></canvas>
+  <footer>
+    <p>&copy; 2025 Interactive Quiz Application. Developed as part of ApexPlanet Internship Task 3.</p>
+  </footer>
+</body>
+</html>
