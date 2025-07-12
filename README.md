@@ -44,7 +44,7 @@ It showcases a dynamic, responsive, and engaging **Quiz Application** built usin
 ## 📽️ Demo Video
 
 Watch the full working app demonstration on LinkedIn:
-🔗 [LinkedIn Video Post]( )
+🔗 [LinkedIn Video Post](https://www.linkedin.com/posts/budde-vinuthna-231642345_webdevelopment-internshipexperience-frontenddeveloper-activity-7349806174155747329-Hs_P?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFZp6sUB_BHgff6t3CRDrvW4lvbYjRB6LCE)
 
 ---
 
@@ -86,4 +86,3 @@ Watch the full working app demonstration on LinkedIn:
 Grateful to **ApexPlanet** for offering this internship experience that allowed hands-on learning in real-world **web development**.
 
 ---
-
